@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #fbfbff;
+  color: #0F0866;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(15, 8, 102, 0.05);
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at 50% -20%, rgba(15, 8, 102, 0.03) 0%, transparent 60%);
+}
+
+.cta-shadow {
+  box-shadow: 0 10px 30px -10px rgba(15, 8, 102, 0.3);
+}
+
+.minimal-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(15, 8, 102, 0.04);
+}
+
+.minimal-card:hover {
+  border-color: rgba(15, 8, 102, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -20px rgba(15, 8, 102, 0.08);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 20;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.letter-tight {
+  letter-spacing: -0.02em;
+}
+
+.letter-wide {
+  letter-spacing: 0.05em;
+}
